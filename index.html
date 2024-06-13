@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Signup/Login</title>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>User Signup/Login</h1>
+      <div id="reset-section">
+        <h2>Password Reset</h2>
+        <label for="reset-option"
+          >Do you want to reset the password? (y/n):
+        </label>
+        <input type="text" id="reset-option" />
+        <button onclick="handleResetOption()">Submit</button>
+      </div>
+
+      <div id="signup-section">
+        <h2>Signup</h2>
+        <label for="signup-name">Enter your name: </label>
+        <input type="text" id="signup-name" />
+        <br />
+        <label for="signup-username">Enter your username: </label>
+        <input type="text" id="signup-username" />
+        <br />
+        <label for="signup-password">Enter your password: </label>
+        <input type="password" id="signup-password" />
+        <br />
+        <label for="signup-confirm-password"
+          >Enter your confirmPassword:
+        </label>
+        <input type="password" id="signup-confirm-password" />
+        <br />
+        <button onclick="handleSignup()">Signup</button>
+      </div>
+
+      <div id="login-section">
+        <h2>Login</h2>
+        <label for="login-username">Please enter your username: </label>
+        <input type="text" id="login-username" />
+        <br />
+        <label for="login-password">Please enter your password: </label>
+        <input type="password" id="login-password" />
+        <br />
+        <button onclick="handleLogin()">Login</button>
+      </div>
+    </div>
+    <div id="output"></div>
+  </body>
+</html>
